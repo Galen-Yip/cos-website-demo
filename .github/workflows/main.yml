@@ -15,7 +15,7 @@ jobs:
       env:
         SECRET_ID: ${{ secrets.SECRET_ID }}
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
-        BUCKET: github-cos-webisite-demo
+        BUCKET: github-cos-website-demo-1251496585
         REGION: ap-guangzhou
       run: coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
     - name: Upload to cos
