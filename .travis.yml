@@ -1,9 +1,0 @@
-language: node_js
-node_js:
-  - node
-deploy:
-  provider: s3
-  access_key_id: ""
-  secret_access_key: ""
-  skip_cleanup: true
-  endpoint: https://github-cos-website-demo-1251496585.cos.ap-guangzhou.myqcloud.com

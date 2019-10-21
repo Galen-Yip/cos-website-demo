@@ -18,4 +18,5 @@ jobs:
         BUCKET: github-cos-webisite-demo
         REGION: ap-guangzhou
       run: coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
-    - name: coscmd upload -r ./ /
+    - name: Upload to cos
+      run: coscmd upload -r ./ /
