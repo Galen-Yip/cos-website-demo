@@ -1,0 +1,7 @@
+- [Home](/)
+- [Features](/features)
+- Getting started
+    - [Sign Up](/sign_up)
+    - [Create Bucket](/create_bucket)
+    - [Upload](/upload)
+    - [Download](/download)
