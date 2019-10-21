@@ -1,0 +1,19 @@
+{
+  "name": "github-cos-website-demo",
+  "version": "1.0.0",
+  "description": "github-cos-website-demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"no test\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Galen-Yip/cos-website-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Galen-Yip/cos-website-demo/issues"
+  },
+  "homepage": "https://github.com/Galen-Yip/cos-website-demo#readme"
+}
