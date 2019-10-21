@@ -1,0 +1,21 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install coscmd
+      run: sudo pip install coscmd
+    - name: Configure coscmd
+      env:
+        SECRET_ID: ${{ secrets.TENCENTCLOUD_SECRET_ID }}
+        SECRET_KEY: ${{ secrets.TENCENTCLOUD_SECRET_KEY }}
+        BUCKET: github-cos-webisite-demo
+        REGION: ap-guangzhou
+      run: coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
+    - name: coscmd upload -r ./ /
